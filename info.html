@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Prediksi Hujan di Australia</title>
+</head>
+
+<body>
+    <header>
+        <img src="static/hacktiv8-1.webp">
+        <div class="navigasi_kiri">
+            <ul>
+                <li><a href="main.html">Dashboard</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="form">
+        <h1>About Projek</h1>
+        <h2>Latar Belakang</h2>
+        <p>Cuaca yaitu salah satu faktor alam yang paling berpengaruh dalam kehidupan. berbagai kegiatan dan aktivitas 
+            manusia akan bergantung pada cuaca pada hari itu. Untuk itu diperlukan perkiraan cuaca atau prediksi cuaca 
+            untuk mengetahui cuaca pada hari itu agar manusia dapa menjalankan aktivitasnya. Adapun faktor-faktor yang 
+            dapat mempengaruhi cuaca diantaranya adalah suhu, kelembaban, tekanan udara, kecepatan angin, dan lain 
+            sebagainya. Salah satu fenomena penting bagi kehidupan yang dipengaruhi oleh cuaca adalah hujan. Berdasarkan 
+            permasalahan itu, perlu dilakukansebuah analisis dengan suatu model yang bisa digunakan untuk  memprediksi 
+            terjadinya hujan agar masyarakat dapat menjalankan aktivitas dengan lebih baik.</p>
+        <h2>Dataset</h2>
+        <p>Dataset yang digunakan pada analisis ini yaitu Rain in Australia yang diunduh dari kaggle melalui link berikut 
+            : (https://www.kaggle.com/jsphyg/weather-dataset-rattle-package)</p>
+        <p>Dataset ini berisi observasi harian perkiraan hujan di seluruh daerah Australia selama 10 tahun. Dataset ini 
+            terdiri dari 23 atribut dan 145460 baris. Atribut yang menjadi variabel target adalah RainTomorrow yang berisi
+            "No" (tidak terjadi hujan besok) dan "Yes" (terjadi hujan besok 1mm atau lebih).</p> 
+        <h2>Objective yang Ingin Dicapai</h2>
+        <p>Objective yang ingin dicapai dalam analisis ini yaitu:</p> 
+        <li>Memahami konsep classification dengan logistic regression dan SVM serta mempersiapkan data untuk digunakan 
+            dalam model logistic regression dan SVM.</li>
+        <li>Dapat mengimplementasikan logistic regression dan SVM untuk membuat prediksi cuaca hari esok berdasarkan 
+            faktor signifikan yang mempengaruhinya</li> 
+        <li>Mengetahui faktor-faktor yang berpengaruh signifikan dalam memprediksi cuaca pada hari esok.</li> 
+    </div>
+
+</body>
+
+</html>

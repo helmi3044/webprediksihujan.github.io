@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Prediksi Hujan di Australia</title>
+</head>
+
+<body>
+    <header>
+        <img src="static/hacktiv8-1.webp">
+        <div class="navigasi_kiri">
+            <ul>
+                <li><a href="main.html">Dashboard</a></li>
+                <li><a href="info.html">About Project</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="form">
+        <h1>Conclusion</h1>
+        <h2>Dari analisis yang telah kami lakukan, diperoleh kesimpulan sebagai berikut:</h2>
+        <li>Pada Dataset terdapat 23 atribut yang diperkirakan sebagai faktor yang mempengaruhi prediksi hujan di 
+            Australia, Namun setelah dilakukan analisis kami menyimpulkan bahwa hanya terdapat 12 atribut yang menjadi 
+            faktor kuat yang paling mempengaruhi prediksi hujan di Australia yaitu atribut Lokasi, TempMin, TempMax, 
+            CurahHujan, Evaporasi, SinarMatahari, KecepatanAngin, Kelembapan9am, Kelembapan3pm, Awan9am, Awan3pm, dan 
+            HujanHariIni</li>
+        <li>Untuk mengatasi missing value pada analisis ini kami menggunakan pengisian missing value dengan menggunakan 
+            median untuk kolom/atribut bertipe numerical dan modus untuk kolom/atribut bertipe categorical</li>
+        <li>Pada analisis ini kami juga membuat beberapa visualisasi menggunakan lineplot, boxplot, histogram, pie chart, 
+            dan matriks korelasi (heatmap) dan juga kamimelakukan beberapa contoh groupby dan query terhadap data 
+            yang ada</li>
+        <li>Pada analisis ini variabel dependen atau target yang digunakan yaitu HujanBesok dan variabel independen yang 
+            digunakan yaitu Lokasi, TempMin, TempMax, CurahHujan, Evaporasi, SinarMatahari, KecepatanAngin, Kelembapan9am,
+            Kelembapan3pm, Awan9am, Awan3pm, dan HujanHariIni</li>
+        <li>Pada analisis kami mengubah data yang bertipe categorical menjadi numeric dengan mengunakan library 
+            Label Encoder</li>
+        <li>Pada proses feature selection kami menggunakan library F regression dengan mengambil 12 atribut yang 
+            paling berpengaruh</li>
+        <li>Pada analisis ini kami membagi data menjadi Training dan Testing dengan proporsi Training data sebesar 
+            70% (0.70) dan Testing data sebesar 30% (0.30)</li>
+        <li>Pada project ini kami menggunakan model logistic regression dan model SVM</li>
+        <li>Untuk model logistic regression didapatkan nilai Akurasi sebesar 84% (0.840), nilai Presisi sebesar 
+            72% (0.719), nilai Recall sebesar 47% (0.470), dan nilai F1 Score sebesar 57% (0.568)</li>
+        <li>Untuk model SVM didapatkan nilai Akurasi sebesar 84% (0.840), nilai Presisi sebesar
+            75% (0.746), nilai Recall sebesar 43% (0.432), dan nilai F1 Score sebesar 55% (0.547)</li>
+        <li>Nilai akurasi dari model logistic regression dan SVM tidak jauh berbeda, keduanya memiliki 
+            nilai akurasi sebesar 84% yang mana kedua hasil tersebut cukup baik untuk dilakukan prediksi hujan di Australia</li>
+        <li>Untuk nilai Akurasi dan Recall model SVM lebih unggul daripada model logistic regression, sedangkan untuk nilai 
+            Presisi dan F1 Score model logistic regression lebih unggul daripada model SVM</li>
+    </div>
+
+</body>
+
+</html>
