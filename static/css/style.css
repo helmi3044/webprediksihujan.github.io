@@ -1,23 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-/* header dan navigasi */
-header {
-    background-color: rgb(184, 184, 184);
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #616161;;
-}
-
-header img{
-    margin-top: 20px;
+img{
+    position: relative;
     width: 200px;
-    height: 50px;
-}
-
-.navigasi_kiri{
-    margin-top: 10px;
-    margin-left: -32%;
+    height: 80px;
 }
 
 .navigasi_kiri ul{
@@ -27,31 +13,50 @@ header img{
 
 .navigasi_kiri ul li{
     float: left;
-    padding-top: 5px;
 }
 
 .navigasi_kiri ul li a{
+    position: relative;
     color: black;
     text-decoration: none;
-    padding-left: 30px;
+    padding-left: 130px;
     text-align: center;
     font-weight: bold;
 }
 
 .navigasi_kiri a:hover{
-    color: #69d7fa;
+    color: #bdae98;
     font-weight: bold;
 }
 
-.form .row {
+.form {
     position: relative;
     z-index: 1;
-    background: #cff8ed;
-    max-width: 600px;
+    background: #dbae78;
+    max-width: 800px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form-control{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 5px 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.option {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
 }
 
 .form input {
@@ -70,7 +75,7 @@ header img{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: rgb(67, 238, 181);
+    background: #ffc073;
     width: 100%;
     border: 0;
     padding: 15px;
@@ -80,12 +85,12 @@ header img{
 }
 
 .form button:hover, .form button:active, .form button:focus {
-    background: #23f1c4;
+    background: #ffd9ac;
 }
 
 .form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
+    margin-top: 8px;
+    color: #1d1d1d;
     font-size: 15px;
 }
 
@@ -95,7 +100,11 @@ header img{
     font-size: 15px;
 }
 
+.form h3{
+    margin-bottom: 8px;
+}
+
 body {
-    background: #23f1c4;
+    background: #99601c;
     font-family: "Roboto", sans-serif;
 }

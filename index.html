@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header>
-        <img src="static/hacktiv8-1.webp">
+    <div class="form">
+        <img src="static/hacktiv8-dark.webp">
         <div class="navigasi_kiri">
             <ul>
                 <li><a href="info.html">About Project</a></li>
@@ -19,11 +19,8 @@
                 <li><a href="conclusion.html">Conclusion</a></li>
             </ul>
         </div>
-    </header>
-
-    <div class="form">
         <h1>Prediksi Hujan di Australia</h1>
-        <b>Petunjuk Pengisian :</b>
+        <h3>Petunjuk Pengisian :</h3>
         <li>Silahkan masukkan lokasi yang ingin untuk dilakukan prediksi</li>
         <li>Untuk Hujan Hari Ini masukkan pilihan Yes atau No</li>
         <li>Untuk kolom lain silahkan masukkan sesuai dengan data yang ingin di prediksi dengan bertipe data float</li>
@@ -31,9 +28,8 @@
         <form action="{{ url_for('predict') }}" method="post">
             <div class="row">
                 <div class="col-md-7 form-group">
-                  <label for="kind">Lokasi : </label>
                                       <select class="form-control" id="kind" name="kind" required="required">
-                                          <option>Pilih Lokasi</option>
+                                          <option>Lokasi</option>
                                           <option value="0">Albury</option>
                                           <option value="1">BadgerysCreek</option>
                                           <option value="2">Cobar</option>
@@ -98,9 +94,8 @@
             <input type="text" name="Awan3pm" placeholder="Awan Pukul 3 pm" required="required" />
             <div class="row">
                 <div class="col-md-7 form-group">
-                  <label for="kind">Hari ini Hujan? : </label>
                                       <select class="form-control" id="kind" name="kind" required="required">
-                                          <option>Pilih</option>
+                                          <option>Hari ini Hujan?</option>
                                           <option value="0">No</option>
                                           <option value="1">Yes</option>
                                         </select>
@@ -110,7 +105,7 @@
             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
         </form>
 
-        <b class="message">{{ prediction_text_2 }}</b>
+        <b class="message">{{ prediction_text_1 }}</b>
         <b class="message">{{ prediction_text_2 }}</b>
     </div>
 
